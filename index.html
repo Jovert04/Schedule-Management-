@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Schedule Management</h1>
+    </header>
+    <main>
+        <div id="form-container">
+            <label for="day">Select Day</label>
+            <select id="day">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject">
+
+            <label for="code">Code</label>
+            <input type="text" id="code">
+
+            <label for="room">Room</label>
+            <input type="text" id="room">
+
+            <label for="time">Time</label>
+            <input type="text" id="time">
+
+            <label for="professor">Professor</label>
+            <input type="text" id="professor">
+
+            <button id="save-btn">Create/Update</button>
+            <button id="view-btn">View Schedule</button>
+        </div>
+
+        <div id="button-container" style="display: none;"></div> <!-- Container for day buttons -->
+        <div id="details-container"></div> <!-- Container for schedule details -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
